@@ -1,68 +1,272 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANET Lab at PTIT</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f7fa;
-            color: #333;
-            line-height: 1.8;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 80px auto;
-            background: white;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            color: #003366;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 18px;
-            text-align: justify;
-        }
-
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ANET Lab researches next-generation network architectures, autonomous network management, AI-driven analytics, and zero-touch orchestration." />
+  <meta name="theme-color" content="#071427" />
+  <title>ANET Lab — Advanced Networking Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="container">
-        <h1>Welcome to the ANET Lab at PTIT</h1>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="ANET Lab home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span class="brand-copy">
+          <strong>ANET Lab</strong>
+          <small>Advanced Networking Systems</small>
+        </span>
+      </a>
 
-        <p>
-            Our research interests focus on pioneering the architecture of next-generation networking systems to achieve unprecedented performance, robust reliability, and seamless scalability for future communication infrastructures.
-        </p>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
 
-        <p>
-            The research directions include the design and optimization of advanced network architectures, intelligent and autonomous network management, AI-driven monitoring and analytics, and zero-touch orchestration for self-configuring and self-healing networks.
-        </p>
-
-        <p>
-            We also explore the application of artificial intelligence and machine learning techniques to enable adaptive, efficient, and fully autonomous networking systems capable of supporting emerging large-scale and data-intensive applications.
-        </p>
-
-        <footer>
-            &copy; 2026 ANET Lab, Posts and Telecommunications Institute of Technology (PTIT)
-        </footer>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#people">People</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-cta">Join us</a>
+      </nav>
     </div>
+  </header>
 
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse"></span> Next-generation networking research</p>
+          <h1>Engineering networks that <span>think, adapt, and heal.</span></h1>
+          <p class="hero-lead">
+            ANET Lab pioneers high-performance, reliable, and scalable networking systems for future communication infrastructures.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">Explore our research</a>
+            <a class="button secondary" href="#people">Meet the team</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>4</strong><span>Core research directions</span></div>
+            <div><strong>8</strong><span>Lab members</span></div>
+            <div><strong>1</strong><span>Shared mission</span></div>
+          </div>
+        </div>
+
+        <div class="network-visual reveal" aria-label="Abstract visualization of an intelligent autonomous network">
+          <div class="visual-label">Autonomous Network Fabric</div>
+          <svg viewBox="0 0 640 560" role="img" aria-label="Connected network nodes">
+            <defs>
+              <linearGradient id="lineGradient" x1="0" x2="1">
+                <stop offset="0%" stop-color="#2de2e6" stop-opacity=".2" />
+                <stop offset="50%" stop-color="#70a7ff" stop-opacity=".95" />
+                <stop offset="100%" stop-color="#aa7cff" stop-opacity=".25" />
+              </linearGradient>
+              <radialGradient id="nodeGradient">
+                <stop offset="0%" stop-color="#fff" />
+                <stop offset="35%" stop-color="#6ff7ff" />
+                <stop offset="100%" stop-color="#1678ff" />
+              </radialGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="6" result="blur" />
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g class="links" stroke="url(#lineGradient)" stroke-width="2">
+              <line x1="92" y1="145" x2="245" y2="100"/><line x1="245" y1="100" x2="385" y2="164"/>
+              <line x1="385" y1="164" x2="544" y2="118"/><line x1="92" y1="145" x2="155" y2="290"/>
+              <line x1="245" y1="100" x2="155" y2="290"/><line x1="245" y1="100" x2="315" y2="275"/>
+              <line x1="385" y1="164" x2="315" y2="275"/><line x1="385" y1="164" x2="500" y2="300"/>
+              <line x1="544" y1="118" x2="500" y2="300"/><line x1="155" y1="290" x2="315" y2="275"/>
+              <line x1="315" y1="275" x2="500" y2="300"/><line x1="155" y1="290" x2="95" y2="430"/>
+              <line x1="315" y1="275" x2="250" y2="445"/><line x1="315" y1="275" x2="405" y2="435"/>
+              <line x1="500" y1="300" x2="540" y2="445"/><line x1="95" y1="430" x2="250" y2="445"/>
+              <line x1="250" y1="445" x2="405" y2="435"/><line x1="405" y1="435" x2="540" y2="445"/>
+            </g>
+            <g class="packets" fill="#7ff7ff">
+              <circle r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M92 145 L245 100 L385 164 L500 300 L405 435"/></circle>
+              <circle r="3"><animateMotion dur="5.5s" repeatCount="indefinite" path="M544 118 L385 164 L315 275 L155 290 L95 430"/></circle>
+              <circle r="3"><animateMotion dur="4.8s" begin="-2s" repeatCount="indefinite" path="M95 430 L250 445 L315 275 L500 300 L540 445"/></circle>
+            </g>
+            <g class="nodes" fill="url(#nodeGradient)" filter="url(#glow)">
+              <circle cx="92" cy="145" r="8"/><circle cx="245" cy="100" r="9"/><circle cx="385" cy="164" r="8"/><circle cx="544" cy="118" r="7"/>
+              <circle cx="155" cy="290" r="9"/><circle cx="315" cy="275" r="14"/><circle cx="500" cy="300" r="9"/>
+              <circle cx="95" cy="430" r="7"/><circle cx="250" cy="445" r="8"/><circle cx="405" cy="435" r="9"/><circle cx="540" cy="445" r="7"/>
+            </g>
+            <g class="rings" fill="none" stroke="#6ff7ff">
+              <circle cx="315" cy="275" r="38"><animate attributeName="r" values="22;62" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".8;0" dur="2.8s" repeatCount="indefinite"/></circle>
+            </g>
+          </svg>
+          <div class="status-card status-one"><span>Reliability</span><strong>Self-healing</strong></div>
+          <div class="status-card status-two"><span>Control</span><strong>Zero-touch</strong></div>
+          <div class="status-card status-three"><span>Intelligence</span><strong>AI-native</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About ANET Lab</p>
+          <h2>Building the intelligence layer for future networks.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>Our research focuses on pioneering the architecture of next-generation networking systems to achieve unprecedented performance, robust reliability, and seamless scalability.</p>
+          <p>We combine networking, distributed systems, artificial intelligence, and automation to create adaptive infrastructures capable of supporting emerging large-scale and data-intensive applications.</p>
+          <div class="principles">
+            <span>Performance</span><span>Reliability</span><span>Scalability</span><span>Autonomy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Research directions</p>
+          <h2>From programmable infrastructure to fully autonomous networks.</h2>
+          <p>We investigate the complete lifecycle of intelligent networking systems—from architecture and optimization to observability, orchestration, and self-healing operation.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <div class="card-number">01</div>
+            <div class="card-icon" aria-hidden="true">⌘</div>
+            <h3>Advanced Network Architectures</h3>
+            <p>Design and optimization of high-performance, programmable, and scalable architectures for future communication systems.</p>
+            <ul><li>Network softwarization</li><li>Cloud-native networking</li><li>Resource optimization</li></ul>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-number">02</div>
+            <div class="card-icon" aria-hidden="true">◎</div>
+            <h3>Intelligent Network Management</h3>
+            <p>Autonomous control loops that continuously adapt network behavior to changing traffic, service, and infrastructure conditions.</p>
+            <ul><li>Intent-based networking</li><li>Closed-loop automation</li><li>Policy-driven control</li></ul>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-number">03</div>
+            <div class="card-icon" aria-hidden="true">∿</div>
+            <h3>AI-driven Monitoring & Analytics</h3>
+            <p>Machine learning techniques for proactive observability, anomaly detection, forecasting, and data-informed network decisions.</p>
+            <ul><li>Network telemetry</li><li>Anomaly detection</li><li>Predictive analytics</li></ul>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-number">04</div>
+            <div class="card-icon" aria-hidden="true">↻</div>
+            <h3>Zero-touch Orchestration</h3>
+            <p>Self-configuring and self-healing networks that minimize manual intervention while preserving safety and reliability.</p>
+            <ul><li>Service orchestration</li><li>Self-healing systems</li><li>Autonomous operations</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vision-band">
+      <div class="container reveal">
+        <p class="eyebrow">Our vision</p>
+        <blockquote>“Networks should not merely carry intelligence—they should embody it.”</blockquote>
+        <p>ANET Lab aims to contribute internationally relevant research, open technologies, and highly skilled researchers for the next era of communication infrastructure.</p>
+      </div>
+    </section>
+
+    <section class="section people" id="people">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">People</p>
+          <h2>A multidisciplinary team advancing autonomous networking.</h2>
+        </div>
+
+        <div class="leadership-grid">
+          <article class="person-card featured reveal">
+            <div class="avatar">PM</div>
+            <div>
+              <p class="role">Lab Director</p>
+              <h3>Assoc. Prof. Dr. Phạm Tuấn Minh</h3>
+              <p>Faculty of Information Technology 1<br>Posts and Telecommunications Institute of Technology</p>
+            </div>
+          </article>
+          <article class="person-card featured reveal">
+            <div class="avatar">HC</div>
+            <div>
+              <p class="role">Principal Member</p>
+              <h3>Dr. Hoàng Mạnh Cường</h3>
+              <p>Faculty of Information Technology 1<br>Posts and Telecommunications Institute of Technology</p>
+            </div>
+          </article>
+          <article class="person-card featured reveal">
+            <div class="avatar">DH</div>
+            <div>
+              <p class="role">Principal Member</p>
+              <h3>Dr. Đặng Ngọc Hùng</h3>
+              <p>Faculty of Information Technology 1<br>Posts and Telecommunications Institute of Technology</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="member-grid">
+          <article class="person-card reveal"><div class="avatar small">KB</div><div><p class="role">Member</p><h3>Dr. Kim Ngọc Bách</h3></div></article>
+          <article class="person-card reveal"><div class="avatar small">ĐL</div><div><p class="role">Member</p><h3>Dr. Đỗ Thị Liên</h3></div></article>
+          <article class="person-card reveal"><div class="avatar small">ĐP</div><div><p class="role">Member</p><h3>Dr. Đào Ngọc Phong</h3></div></article>
+          <article class="person-card reveal"><div class="avatar small">NĐ</div><div><p class="role">Member</p><h3>M.Sc. Ngô Tiến Đức</h3></div></article>
+          <article class="person-card reveal"><div class="avatar small">NT</div><div><p class="role">Member</p><h3>B.Sc. Nguyễn Hữu Tuấn</h3></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Research pipeline</p>
+          <h2>Topics we are actively developing.</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-item reveal"><span class="project-index">A</span><div><h3>AI-native Network Digital Twins</h3><p>High-fidelity virtual environments for network experimentation, forecasting, and safe policy validation.</p></div><span class="project-tag">Emerging</span></article>
+          <article class="project-item reveal"><span class="project-index">B</span><div><h3>Autonomous Fault Management</h3><p>End-to-end detection, diagnosis, and remediation workflows for resilient self-healing infrastructures.</p></div><span class="project-tag">Core</span></article>
+          <article class="project-item reveal"><span class="project-index">C</span><div><h3>Learning-based Traffic Engineering</h3><p>Adaptive routing and resource allocation for dynamic, large-scale, and data-intensive workloads.</p></div><span class="project-tag">Core</span></article>
+        </div>
+        <p class="project-note">Detailed projects, datasets, software, and publications will be added as they become publicly available.</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-panel reveal">
+        <div>
+          <p class="eyebrow">Collaborate with us</p>
+          <h2>Let’s shape the next generation of intelligent networks.</h2>
+          <p>We welcome research collaboration, student participation, and conversations with academic and industry partners.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:contact@anet-lab.github.io">Contact ANET Lab</a>
+          <p>Posts and Telecommunications Institute of Technology<br>Faculty of Information Technology 1</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-copy"><strong>ANET Lab</strong><small>Advanced Networking Systems</small></span>
+      </div>
+      <p>© <span id="year"></span> ANET Lab. All rights reserved.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
 </body>
 </html>
